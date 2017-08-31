@@ -8,24 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8C45F1021F58257B00F08845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F1011F58257B00F08845 /* AppDelegate.m */; };
-		8C45F1051F58257B00F08845 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F1041F58257B00F08845 /* ViewController.m */; };
 		8C45F1081F58257B00F08845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C45F1061F58257B00F08845 /* Main.storyboard */; };
 		8C45F10A1F58257B00F08845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C45F1091F58257B00F08845 /* Assets.xcassets */; };
 		8C45F10D1F58257B00F08845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C45F10B1F58257B00F08845 /* LaunchScreen.storyboard */; };
 		8C45F1101F58257B00F08845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F10F1F58257B00F08845 /* main.m */; };
+		8C45F1181F58299800F08845 /* XYZTransactionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F1171F58299800F08845 /* XYZTransactionTableViewController.m */; };
+		8C45F11D1F58362D00F08845 /* XYZTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F11C1F58362D00F08845 /* XYZTransaction.m */; };
+		8C45F1201F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F11F1F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.m */; };
+		8C45F1241F584F3A00F08845 /* XYZTransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45F1231F584F3A00F08845 /* XYZTransactionDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C45F0FD1F58257B00F08845 /* SimpleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C45F1001F58257B00F08845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C45F1011F58257B00F08845 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C45F1031F58257B00F08845 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C45F1041F58257B00F08845 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C45F1071F58257B00F08845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C45F1091F58257B00F08845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C45F10C1F58257B00F08845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C45F10E1F58257B00F08845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C45F10F1F58257B00F08845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C45F1161F58299800F08845 /* XYZTransactionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZTransactionTableViewController.h; sourceTree = "<group>"; };
+		8C45F1171F58299800F08845 /* XYZTransactionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZTransactionTableViewController.m; sourceTree = "<group>"; };
+		8C45F11B1F58362D00F08845 /* XYZTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZTransaction.h; sourceTree = "<group>"; };
+		8C45F11C1F58362D00F08845 /* XYZTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZTransaction.m; sourceTree = "<group>"; };
+		8C45F11E1F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XYZTransactionTableViewController+TransactionDataSource.h"; sourceTree = "<group>"; };
+		8C45F11F1F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XYZTransactionTableViewController+TransactionDataSource.m"; sourceTree = "<group>"; };
+		8C45F1211F583F8900F08845 /* XYZTransactionTableViewControllerPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZTransactionTableViewControllerPrivate.h; sourceTree = "<group>"; };
+		8C45F1221F584F3A00F08845 /* XYZTransactionDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZTransactionDetailViewController.h; sourceTree = "<group>"; };
+		8C45F1231F584F3A00F08845 /* XYZTransactionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZTransactionDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,15 @@
 			children = (
 				8C45F1001F58257B00F08845 /* AppDelegate.h */,
 				8C45F1011F58257B00F08845 /* AppDelegate.m */,
-				8C45F1031F58257B00F08845 /* ViewController.h */,
-				8C45F1041F58257B00F08845 /* ViewController.m */,
+				8C45F11B1F58362D00F08845 /* XYZTransaction.h */,
+				8C45F11C1F58362D00F08845 /* XYZTransaction.m */,
+				8C45F1161F58299800F08845 /* XYZTransactionTableViewController.h */,
+				8C45F1171F58299800F08845 /* XYZTransactionTableViewController.m */,
+				8C45F11E1F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.h */,
+				8C45F11F1F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.m */,
+				8C45F1211F583F8900F08845 /* XYZTransactionTableViewControllerPrivate.h */,
+				8C45F1221F584F3A00F08845 /* XYZTransactionDetailViewController.h */,
+				8C45F1231F584F3A00F08845 /* XYZTransactionDetailViewController.m */,
 				8C45F1061F58257B00F08845 /* Main.storyboard */,
 				8C45F1091F58257B00F08845 /* Assets.xcassets */,
 				8C45F10B1F58257B00F08845 /* LaunchScreen.storyboard */,
@@ -142,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C45F1051F58257B00F08845 /* ViewController.m in Sources */,
+				8C45F1201F583CE100F08845 /* XYZTransactionTableViewController+TransactionDataSource.m in Sources */,
+				8C45F1181F58299800F08845 /* XYZTransactionTableViewController.m in Sources */,
 				8C45F1101F58257B00F08845 /* main.m in Sources */,
 				8C45F1021F58257B00F08845 /* AppDelegate.m in Sources */,
+				8C45F11D1F58362D00F08845 /* XYZTransaction.m in Sources */,
+				8C45F1241F584F3A00F08845 /* XYZTransactionDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
