@@ -12,7 +12,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-  
+
     [self.view addSubview:_tableView];
   
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -29,6 +29,9 @@
 - (void)insertNewTransaction:(id)sender {
   XYZTransaction *transaction = [[XYZTransaction alloc] init];
   [self.transactions addObject:transaction];
+  [self.transactions sortUsingComparator:^NSComparisonResult(XYZTransaction  *obj1, XYZTransaction *obj2) {
+    return [obj2.date compare:obj1.date];
+  }];
   [_tableView reloadData];
 }
 
