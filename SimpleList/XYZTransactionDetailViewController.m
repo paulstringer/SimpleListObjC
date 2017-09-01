@@ -24,4 +24,10 @@
   _dateLabel.text = _transaction.date.description;
 }
 
+- (IBAction)delete:(id)sender {
+    if (_deleteBlock) {
+      _deleteBlock();
+    }
+}
+
 @end

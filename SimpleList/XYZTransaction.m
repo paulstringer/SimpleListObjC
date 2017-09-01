@@ -14,7 +14,8 @@
 }
 
 - (nonnull id)copyWithZone:(nullable NSZone *)zone {
-  return [[XYZTransaction alloc] initWithDate:[_date copyWithZone:zone]];
+  NSDate *copyDate = [[NSDate alloc] initWithTimeInterval:0 sinceDate:_date];
+  return [[XYZTransaction alloc] initWithDate:copyDate];
 }
 
 @end

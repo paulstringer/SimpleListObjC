@@ -96,26 +96,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHs-94-JBC">
-                                <rect key="frame" x="176" y="347.66666666666669" width="62" height="41"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFz-8A-dx0">
-                                <rect key="frame" x="186" y="357.66666666666669" width="42" height="21"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iBr-Cs-cms">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFz-8A-dx0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="607"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6d-pK-el2">
+                                        <rect key="frame" x="0.0" y="612" width="414" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="q56-C0-yxb"/>
+                                        </constraints>
+                                        <state key="normal" title="DELETE"/>
+                                        <connections>
+                                            <action selector="delete:" destination="Tga-Qo-lMu" eventType="touchUpInside" id="8tj-QQ-2wp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fHs-94-JBC" firstAttribute="width" secondItem="EFz-8A-dx0" secondAttribute="width" constant="20" id="N0p-pU-CGk"/>
-                            <constraint firstItem="fHs-94-JBC" firstAttribute="centerX" secondItem="L1q-cO-h6J" secondAttribute="centerX" id="NbP-ZM-yx7"/>
-                            <constraint firstItem="EFz-8A-dx0" firstAttribute="centerY" secondItem="L1q-cO-h6J" secondAttribute="centerY" id="OHv-bf-Qfm"/>
-                            <constraint firstItem="EFz-8A-dx0" firstAttribute="centerX" secondItem="L1q-cO-h6J" secondAttribute="centerX" id="aaK-V4-P5u"/>
-                            <constraint firstItem="fHs-94-JBC" firstAttribute="centerY" secondItem="L1q-cO-h6J" secondAttribute="centerY" id="qwH-ut-n5x"/>
-                            <constraint firstItem="fHs-94-JBC" firstAttribute="height" secondItem="EFz-8A-dx0" secondAttribute="height" constant="20" id="xvu-Ju-nfn"/>
+                            <constraint firstItem="iBr-Cs-cms" firstAttribute="leading" secondItem="Mzr-A7-ELV" secondAttribute="leading" id="HSZ-4h-5bR"/>
+                            <constraint firstItem="Mzr-A7-ELV" firstAttribute="bottom" secondItem="iBr-Cs-cms" secondAttribute="bottom" id="SiN-AT-orn"/>
+                            <constraint firstItem="iBr-Cs-cms" firstAttribute="top" secondItem="Mzr-A7-ELV" secondAttribute="top" id="hDw-o3-adW"/>
+                            <constraint firstItem="Mzr-A7-ELV" firstAttribute="trailing" secondItem="iBr-Cs-cms" secondAttribute="trailing" id="ihK-aR-Kkm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mzr-A7-ELV"/>
                     </view>

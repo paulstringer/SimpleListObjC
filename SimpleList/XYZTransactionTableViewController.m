@@ -31,8 +31,14 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  NSIndexPath* selectedTransactionIndexPath = _tableView.indexPathForSelectedRow;
   XYZTransactionDetailViewController *detailViewController = segue.destinationViewController;
-  [detailViewController displayTransaction:_transactions[_tableView.indexPathForSelectedRow.row]];
+  [detailViewController displayTransaction:_transactions[selectedTransactionIndexPath.row]];
+  [detailViewController setDeleteBlock:^{
+    [self.navigationController popViewControllerAnimated:YES];
+    [_transactions removeObjectAtIndex:selectedTransactionIndexPath.row];
+    [_tableView deleteRowsAtIndexPaths:@[selectedTransactionIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+  }];
 }
 
 @end
