@@ -9,9 +9,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  XYZTransactionTableViewController *controller = [[XYZTransactionTableViewController alloc] init];
-  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-  _window.rootViewController = navigationController;
+  //XYZTransactionTableViewController *controller = [[XYZTransactionTableViewController alloc] init];
+  //UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+  //_window.rootViewController = navigationController;
   return YES;
 }
 

@@ -6,17 +6,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-    self.title = @"Transactions";
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-
-    [self.view addSubview:_tableView];
-  
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewTransaction:)];
 }
 
 - (NSMutableArray *)transactions {
@@ -26,7 +16,7 @@
   return _transactions;
 }
 
-- (void)insertNewTransaction:(id)sender {
+- (IBAction)insertNewTransaction:(id)sender {
   XYZTransaction *transaction = [[XYZTransaction alloc] init];
   [self.transactions addObject:transaction];
   [self.transactions sortUsingComparator:^NSComparisonResult(XYZTransaction  *obj1, XYZTransaction *obj2) {
@@ -40,10 +30,9 @@
   [_tableView setEditing:editing animated:true];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  XYZTransactionDetailViewController *detailViewController = [[XYZTransactionDetailViewController alloc] init];
-  [detailViewController displayTransaction:_transactions[indexPath.row]];
-  [self.navigationController pushViewController:detailViewController animated:TRUE];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  XYZTransactionDetailViewController *detailViewController = segue.destinationViewController;
+  [detailViewController displayTransaction:_transactions[_tableView.indexPathForSelectedRow.row]];
 }
 
 @end

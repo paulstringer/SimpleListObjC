@@ -2,6 +2,6 @@
 #import "XYZTransaction.h"
 
 @interface XYZTransactionTableViewController : UIViewController {
-  UITableView *_tableView;
+  IBOutlet __weak UITableView *_tableView;
 }
 @end
